@@ -39,10 +39,8 @@ nav {
     text-decoration: none;
 }
 
-
-/* Hamburger Menu Styles */
 .hamburger {
-    display: none; /* Hidden on desktop */
+    display: none; 
     flex-direction: column;
     cursor: pointer;
     padding: 0.5rem;
@@ -51,13 +49,12 @@ nav {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: #fff; /* White lines on black nav */
+    background: #fff;
     margin: 3px 0;
     transition: 0.3s;
     border-radius: 2px;
 }
 
-/* Active state for hamburger (X shape) */
 .hamburger.active span:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -70,7 +67,6 @@ nav {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Mobile Navigation */
 #nav-menu {
     display: flex;
     list-style: none;
@@ -107,20 +103,19 @@ nav {
     color: #a9abab;
 }
 
-/* Responsive for Mobile */
 @media (max-width: 768px) {
     
     .hamburger {
-        display: flex; /* Show hamburger on mobile */
+        display: flex; 
     }
 
     #nav-menu {
         position: fixed;
-        top: 60px; /* Below header height */
-        left: -100%; /* Hidden off-screen */
+        top: 60px; 
+        left: -100%; 
         width: 100%;
         height: calc(100vh - 60px);
-        background: #000; /* Black background */
+        background: #000; 
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -477,23 +472,22 @@ footer {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 1rem; /* Space between icons */
+    gap: 1rem;
     margin-bottom: 1rem;
 }
 
 .social-links a {
     color: #fff;
-    font-size: 1.5rem; /* Icon size */
-    transition: color 0.3s, transform 0.3s; /* Smooth hover effects */
+    font-size: 1.5rem; 
+    transition: color 0.3s, transform 0.3s; 
 }
 
 .social-links a:hover {
-    color: #77797a; /* Matches your theme's accent color */
-    transform: scale(1.1); /* Slight zoom on hover */
+    color: #77797a; 
+    transform: scale(1.1); 
 }
 }
 
-/* Animations */
 @keyframes slideInLeft {
     from {
         opacity: 0;
@@ -554,7 +548,7 @@ footer {
         height: 200px;
     }
     nav ul {
-        display: none; /* For mobile, you might want a hamburger menu, but keeping simple */
+        display: none; 
     }
     .about-content {
         flex-direction: column;
@@ -566,4 +560,5 @@ footer {
     .projects-grid {
         grid-template-columns: 1fr;
     }
+
 }
